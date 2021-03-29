@@ -13,6 +13,9 @@
 		467FC84723F3738C00C15592 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 467FC84623F3738C00C15592 /* Assets.xcassets */; };
 		467FC84A23F3738C00C15592 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 467FC84823F3738C00C15592 /* LaunchScreen.storyboard */; };
 		467FC84D23F3738C00C15592 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 467FC84C23F3738C00C15592 /* main.m */; };
+		CC3A62192611780400F157FD /* JYKTimedTask.m in Sources */ = {isa = PBXBuildFile; fileRef = CC3A62182611780400F157FD /* JYKTimedTask.m */; };
+		CC3A621E26118A8C00F157FD /* JYKTimedTaskController.m in Sources */ = {isa = PBXBuildFile; fileRef = CC3A621D26118A8C00F157FD /* JYKTimedTaskController.m */; };
+		CC3A62242611947200F157FD /* JYKTimeTrackerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CC3A62232611947200F157FD /* JYKTimeTrackerViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +29,12 @@
 		467FC84923F3738C00C15592 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		467FC84B23F3738C00C15592 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		467FC84C23F3738C00C15592 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		CC3A62172611780400F157FD /* JYKTimedTask.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JYKTimedTask.h; sourceTree = "<group>"; };
+		CC3A62182611780400F157FD /* JYKTimedTask.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JYKTimedTask.m; sourceTree = "<group>"; };
+		CC3A621C26118A8C00F157FD /* JYKTimedTaskController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JYKTimedTaskController.h; sourceTree = "<group>"; };
+		CC3A621D26118A8C00F157FD /* JYKTimedTaskController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JYKTimedTaskController.m; sourceTree = "<group>"; };
+		CC3A62222611947200F157FD /* JYKTimeTrackerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JYKTimeTrackerViewController.h; sourceTree = "<group>"; };
+		CC3A62232611947200F157FD /* JYKTimeTrackerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JYKTimeTrackerViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,9 +67,9 @@
 		467FC83923F3738B00C15592 /* TimeTracker */ = {
 			isa = PBXGroup;
 			children = (
-				467FC85D23F3784C00C15592 /* Model Controller */,
-				467FC85B23F3768C00C15592 /* Model */,
-				467FC85C23F376B400C15592 /* View Controller */,
+				CC3A621B26118A7000F157FD /* Model Controller */,
+				CC3A6216261177E900F157FD /* Model */,
+				CC3A62212611941700F157FD /* View Controller */,
 				467FC85423F373D300C15592 /* Storyboards */,
 				467FC85323F373C900C15592 /* Resources */,
 			);
@@ -90,25 +99,31 @@
 			path = Storyboards;
 			sourceTree = "<group>";
 		};
-		467FC85B23F3768C00C15592 /* Model */ = {
+		CC3A6216261177E900F157FD /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				CC3A62172611780400F157FD /* JYKTimedTask.h */,
+				CC3A62182611780400F157FD /* JYKTimedTask.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
 		};
-		467FC85C23F376B400C15592 /* View Controller */ = {
+		CC3A621B26118A7000F157FD /* Model Controller */ = {
 			isa = PBXGroup;
 			children = (
-			);
-			path = "View Controller";
-			sourceTree = "<group>";
-		};
-		467FC85D23F3784C00C15592 /* Model Controller */ = {
-			isa = PBXGroup;
-			children = (
+				CC3A621C26118A8C00F157FD /* JYKTimedTaskController.h */,
+				CC3A621D26118A8C00F157FD /* JYKTimedTaskController.m */,
 			);
 			path = "Model Controller";
+			sourceTree = "<group>";
+		};
+		CC3A62212611941700F157FD /* View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				CC3A62222611947200F157FD /* JYKTimeTrackerViewController.h */,
+				CC3A62232611947200F157FD /* JYKTimeTrackerViewController.m */,
+			);
+			path = "View Controller";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -182,7 +197,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				467FC83C23F3738B00C15592 /* AppDelegate.m in Sources */,
+				CC3A62242611947200F157FD /* JYKTimeTrackerViewController.m in Sources */,
+				CC3A62192611780400F157FD /* JYKTimedTask.m in Sources */,
 				467FC84D23F3738C00C15592 /* main.m in Sources */,
+				CC3A621E26118A8C00F157FD /* JYKTimedTaskController.m in Sources */,
 				467FC83F23F3738B00C15592 /* SceneDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
